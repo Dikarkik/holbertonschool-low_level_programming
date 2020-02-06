@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	char l;
+	int i;
 
-	for (l = '0'; l <= '9'; l++)
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(l);
-		if (l != '9')
+		putchar(i);
+		if (i != '9')
 		{
 			putchar(44);
 		}
