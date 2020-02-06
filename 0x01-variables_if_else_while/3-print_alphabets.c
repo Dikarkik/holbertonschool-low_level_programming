@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -16,9 +15,10 @@ int main(void)
 		putchar(l);
 	}
 	for (al = 'A'; al <= 'Z'; al++)
-        {
-                putchar(al);
-        }
+	{
+		putchar(al);
+	}
+
 	putchar('\n');
 
 	return (0);
