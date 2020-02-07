@@ -5,7 +5,6 @@
  *main - main function
  *Return: always 0
  */
-
 int main(void)
 {
 	int i;
@@ -27,7 +26,7 @@ int main(void)
 					putchar(j);
 					putchar(u);
 
-					if (!(i == 57 && x == 56 && j == 57 && u == 57))
+					if (!(i == 57 && x == 57 && j == 57 && u == 57))
 					{
 						putchar(44);
 						putchar(32);
