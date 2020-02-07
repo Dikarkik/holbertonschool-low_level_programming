@@ -16,20 +16,29 @@ int main(void)
 	{
 		for (x = 48; x <= 57; x++)
 		{
-			for (j = i; j <= 57; j++)
+			for (j = 48; j <= 57; j++)
 			{
-				for (u = x + 1; u <= 57; u++)
+				for (u = 48; u <= 57; u++)
 				{
-					putchar(i);
+					if(j == 48 && u == 48)
+					{
+						j = i;
+						u = x + 1;
+					}
+				       	putchar(i);
 					putchar(x);
 					putchar(32);
 					putchar(j);
 					putchar(u);
 
-					if (!(i == 57 && x == 57 && j == 57 && u == 57))
+					if (!(i == 57 && x == 56 && j == 57 && u == 57))
 					{
 						putchar(44);
 						putchar(32);
+					}
+					if (i == 57 && x == 56)
+					{
+						x = 57;
 					}
 				}
 
