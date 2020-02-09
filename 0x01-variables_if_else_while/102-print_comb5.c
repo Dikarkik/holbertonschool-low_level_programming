@@ -12,33 +12,24 @@ int main(void)
 	int j;
 	int u;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (x = 48; x <= 57; x++)
+		for (x = 0; x <= 9; x++)
 		{
-			for (j = 48; j <= 57; j++)
+			for (j = i; j <= 9; j++)
 			{
-				for (u = 48; u <= 57; u++)
+				for (u = x + 1; u <= 9; u++)
 				{
-					if(j == 48 && u == 48)
-					{
-						j = i;
-						u = x + 1;
-					}
-				       	putchar(i);
-					putchar(x);
+					putchar(i + '0');
+					putchar(x + '0');
 					putchar(32);
-					putchar(j);
-					putchar(u);
+					putchar(j + '0');
+					putchar(u + '0');
 
-					if (!(i == 57 && x == 56 && j == 57 && u == 57))
+					if (!(i == 9 && x == 8 && j == 9 && u == 9))
 					{
 						putchar(44);
 						putchar(32);
-					}
-					if (i == 57 && x == 56)
-					{
-						x = 57;
 					}
 				}
 
@@ -47,6 +38,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
