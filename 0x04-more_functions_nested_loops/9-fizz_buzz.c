@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - prints the numbers from 1 to 100, followed by a new line. .
+ * main - prints the numbers from 1 to 100, followed by a new line. .
  *
  * Return: void.
  */
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -32,4 +32,6 @@ void main(void)
 	}
 
 	putchar('\n');
+
+	return (0);
 }
