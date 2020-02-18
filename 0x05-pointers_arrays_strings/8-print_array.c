@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 	while (a[size])
 		size++;
 
-	if (n <= size)
+	if (n <= size && n > 0)
 	{
 		for (i = 0; i < n; i++)
 		{
