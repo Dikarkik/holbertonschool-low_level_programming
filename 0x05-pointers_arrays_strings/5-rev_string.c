@@ -21,7 +21,7 @@ void rev_string(char *s)
 
 	for (i = 0; i <= half; i++)
 	{
-		temporal =  *(s + i);
+		temporal =  s[i];
 		*(s + i) = *(s + count);
 		*(s + count) = temporal;
 
