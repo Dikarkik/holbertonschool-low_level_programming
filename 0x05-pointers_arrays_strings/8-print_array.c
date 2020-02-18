@@ -12,10 +12,10 @@ void print_array(int *a, int n)
 	int size = 0;
 	int i = 0;
 
-	while (*(a + size))
-	       size++;
+	while (a[size])
+		size++;
 
-	if (n < size)
+	if (n <= size)
 	{
 		for (i = 0; i < n; i++)
 		{
