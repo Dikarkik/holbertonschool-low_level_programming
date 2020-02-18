@@ -12,7 +12,7 @@ void rev_string(char *s)
 	int i;
 	char temporal;
 
-	while(*(s + count))
+	while (*(s + count))
 		count++;
 
 	count--;
