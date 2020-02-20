@@ -24,8 +24,8 @@ char *cap_string(char *str)
 				{
 					if (str[count - 1] == separators[i])
 					{
-					    str[count] -= 32;
-					    break;
+						str[count] -= 32;
+						i = 14;
 					}
 				}
 			}
