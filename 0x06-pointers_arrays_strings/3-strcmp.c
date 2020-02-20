@@ -8,10 +8,18 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	if (s1 == s2)
-		return (0);
-	else if (s1 > s2)
-		return (15);
-	else
-		return (-15);
+	int count = 0;
+	int dif = 0;
+
+	while(s1[count])
+	{
+		dif = s1[count] - s2[count];
+
+		if (dif != 0)
+			return (dif);
+
+		count++;
+	}
+
+	return (dif);
 }
