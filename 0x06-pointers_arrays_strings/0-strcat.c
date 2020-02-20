@@ -3,7 +3,7 @@
 /**
  *_strcat - concatenates two strings.
  *@dest: string.
- *@src: string to concatenate in dest.
+ *@src: to concatenate in dest.
  *Return: a pointer to the resulting string dest.
  */
 char *_strcat(char *dest, char *src)
@@ -12,9 +12,7 @@ char *_strcat(char *dest, char *src)
 	int count2 = 0;
 
 	while (dest[count])
-	{
 		count++;
-	}
 
 	while (src[count2])
 	{
@@ -22,6 +20,8 @@ char *_strcat(char *dest, char *src)
 		count++;
 		count2++;
 	}
+
+	dest[count] = '\0';
 
 	return (dest);
 }
