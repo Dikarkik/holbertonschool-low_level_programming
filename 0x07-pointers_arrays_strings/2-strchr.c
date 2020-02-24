@@ -1,11 +1,12 @@
 #include "holberton.h"
+#include <stddef.h>
 
 /**
  * _strchr - locates a character in a string.
  *@s: string.
  *@c: char that we need to find.
- * Return: a pointer to the first occurrence of the character c in the string s.
- * or NULL if the character is not found.
+ * Return: a pointer to the first occurrence of the character c
+ * in the string s or NULL if the character is not found.
  */
 char *_strchr(char *s, char c)
 {
@@ -19,5 +20,5 @@ char *_strchr(char *s, char c)
 		count++;
 	}
 
-	return ('\0');
+	return (NULL);
 }
