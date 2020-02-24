@@ -4,10 +4,13 @@
 Concatenates two strings.
 
 1-strncat.c
-concatenates two strings (use at most n bytes from src).
+Concatenates two strings (use at most n bytes from src).
 
 2-strncpy.c
-copies a string.
+Copies a string.
 
 3-strcmp.c
-compares two strings.
+Compares two strings.
+
+4-rev_array.c
+Reverses the content of an array of integers.
