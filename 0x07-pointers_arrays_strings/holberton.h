@@ -1,6 +1,5 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-#define NULL (void *)0
 
 int _putchar(char c);
 
