@@ -15,7 +15,7 @@ char *_strstr(char *haystack, char *needle)
 	char *p;
 
 	if (*needle == '\0')
-		return ('\0');
+		return (haystack);
 
 	while (needle[size_n])
 		size_n++;
