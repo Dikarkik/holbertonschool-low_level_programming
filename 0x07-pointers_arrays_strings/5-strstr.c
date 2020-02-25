@@ -14,6 +14,9 @@ char *_strstr(char *haystack, char *needle)
 	int size_n = 0;
 	char *p;
 
+	if (!needle || !haystack)
+		return ('\0');
+
 	while (needle[size_n])
 		size_n++;
 
