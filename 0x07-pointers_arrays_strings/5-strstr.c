@@ -27,6 +27,9 @@ char *_strstr(char *haystack, char *needle)
 					p = &haystack[i];
 
 				checked++;
+
+				if (checked == size_n)
+					return (p);
 			}
 			else
 				checked = 0;
@@ -34,9 +37,6 @@ char *_strstr(char *haystack, char *needle)
 
 		i++;
 	}
-
-	if (p)
-		return (p);
 
 	return ('\0');
 }
