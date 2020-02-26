@@ -1,5 +1,4 @@
 #include "holberton.h"
-void _puts(char *s, int pos);
 
 /**
  * _puts_recursion - prints a string, followed by a new line.
@@ -8,25 +7,15 @@ void _puts(char *s, int pos);
  */
 void _puts_recursion(char *s)
 {
-	int pos = 0;
-
-	if (*s)
-		_puts(s, pos);
-}
-
-/**
- * _puts - recursive print of s.
- *@s: string.
- *@pos: count to go through of s.
- * Return:
- */
-void _puts(char *s, int pos)
-{
-	_putchar(s[pos]);
-	pos++;
-
-	if (s[pos])
-		_puts(s, pos);
-	else
+	if (!*s)
+	{
 		_putchar('\n');
+		return;
+	}
+
+	_putchar(*s);
+
+	if (s++)
+		_puts_recursion(s++);
+
 }
