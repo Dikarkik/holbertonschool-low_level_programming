@@ -46,7 +46,7 @@ int check_isdigit(int argc, char *argv[])
 		{
 			if (!isdigit(argv[count_arg][count_char]))
 			{
-				printf("Error");
+				printf("Error\n");
 				return (1);
 			}
 			count_char++;
