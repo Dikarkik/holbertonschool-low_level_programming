@@ -1,6 +1,16 @@
 #include <stdlib.h>
 #include "holberton.h"
-#include <stdio.h>
+
+void free_buffer(int **gr)
+{
+        int y;
+
+	for (y = 0; gr[y]; y++)
+                free(gr[y]);
+
+	free(gr);
+}
+
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array of integers.
  * Each element of the grid should be initialized to 0.
@@ -27,8 +37,12 @@ int **alloc_grid(int width, int height)
 	{
 		grid[y] = malloc(width * sizeof(int));
 		if (grid[y] == NULL)
+		{
+			free_buffer(grid);
 			return (NULL);
+		}
 	}
+
 
 	for (y = 0; y < height; y++)
 	{
