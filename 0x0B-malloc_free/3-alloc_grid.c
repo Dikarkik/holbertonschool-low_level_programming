@@ -1,12 +1,17 @@
 #include <stdlib.h>
 #include "holberton.h"
 
+/**
+ * free_buffer - clean a 2d array
+ * @gr: grid.
+ * Return: void.
+ */
 void free_buffer(int **gr)
 {
-        int y;
+	int y;
 
 	for (y = 0; gr[y]; y++)
-                free(gr[y]);
+		free(gr[y]);
 
 	free(gr);
 }
