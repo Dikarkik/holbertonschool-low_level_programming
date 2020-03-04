@@ -44,7 +44,7 @@ char *argstostr(int ac, char **av)
 	int x;
 	int all_chars;
 
-	if (ac == 0 || av == NULL)
+	if (ac == NULL || ac == 0 || av == NULL)
 		return (NULL);
 
 	all_chars = count_chars_of_argv(ac, av);
