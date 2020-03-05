@@ -13,15 +13,23 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p;
+	char *p;
+	int total;
+	int count = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(nmemb * size);
+	total = nmemb * size;
+	p = malloc(total);
 
 	if (p == NULL)
 		return (NULL);
 
+	while (count < total)
+	{
+		p[count] = '\0';
+		count++;
+	}
 	return (p);
 }
