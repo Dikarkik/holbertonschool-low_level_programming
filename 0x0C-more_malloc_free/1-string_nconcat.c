@@ -8,12 +8,16 @@
  */
 int len(char *str)
 {
-	int count = 0;
+	int i;
 
-	while (str[count])
-		count++;
+	if (str == NULL)
+		return (0);
 
-	return (count);
+	i = 0;
+	while (str[i])
+		i++;
+
+	return (i);
 }
 
 /**
@@ -66,6 +70,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	str[position] = '\0';
-
 	return (str);
 }
