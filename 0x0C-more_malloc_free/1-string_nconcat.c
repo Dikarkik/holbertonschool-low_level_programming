@@ -8,16 +8,12 @@
  */
 int len(char *str)
 {
-	int i;
+	int count = 0;
 
-	if (str == NULL)
-		return (0);
+	while (str[count])
+		count++;
 
-	i = 0;
-	while (str[i])
-		i++;
-
-	return (i);
+	return (count);
 }
 
 /**
