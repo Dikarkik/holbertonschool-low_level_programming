@@ -20,15 +20,17 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	fun_ptr = get_op_func(argv[3]);
+	fun_ptr = get_op_func(argv[2]);
 
 	if (fun_ptr == NULL)
+	{
+		printf("Error\n");
 		exit(99);
-
-	num1 = atoi(argv[2]);
-	num2 = atoi(argv[4]);
+	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 	result = fun_ptr(num1, num2);
-	printf("%d", result);
+	printf("%d\n", result);
 
 	return (0);
 }
