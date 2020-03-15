@@ -9,6 +9,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int index = 0;
+	char *str;
 
 	va_start(ap, format);
 
@@ -26,7 +27,12 @@ void print_all(const char * const format, ...)
 				printf("%f", (float) va_arg(ap, double));
 			break;
 			case 's':
-				printf("%s", va_arg(ap, char *));
+				str = va_arg(ap, char *);
+				if (!str)
+				{
+					str = "(nil)";
+				}
+				printf("%s", str);
 			break;
 		};
 
