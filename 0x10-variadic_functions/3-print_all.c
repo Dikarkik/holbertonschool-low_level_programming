@@ -7,6 +7,33 @@
  */
 void print_all(const char * const format, ...)
 {
+	va_list ap;
+	int index = 0;
 
+	va_start(ap, format);
 
+	while (format && format[index])
+	{
+		switch (format[index])
+		{
+			case 'c':
+				printf("%c", va_arg(ap, int));
+			break;
+			case 'i':
+				printf("%i", va_arg(ap, int));
+			break;
+			case 'f':
+				printf("%f", (float) va_arg(ap, double));
+			break;
+			case 's':
+				printf("%s", va_arg(ap, char *));
+			break;
+		};
+
+		if (index > 0 && format[index + 1])
+			printf(", ");
+		index++;
+	}
+	printf("\n");
+	va_end(ap);
 }
