@@ -12,9 +12,6 @@ void print_all(const char * const format, ...)
 	char *str;
 	int printed = 0;
 
-	if (format == NULL)
-		return;
-
 	va_start(ap, format);
 	while (format && format[index])
 	{
