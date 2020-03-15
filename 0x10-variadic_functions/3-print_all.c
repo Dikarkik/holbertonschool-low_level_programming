@@ -13,22 +13,19 @@ void print_all(const char * const format, ...)
 	int printed = 0;
 
 	va_start(ap, format);
-
 	while (format && format[index])
 	{
+		printed = 1;
 		switch (format[index])
 		{
 			case 'c':
 				printf("%c", va_arg(ap, int));
-				printed = 1;
 				break;
 			case 'i':
 				printf("%i", va_arg(ap, int));
-				printed = 1;
 				break;
 			case 'f':
 				printf("%f", (float) va_arg(ap, double));
-				printed = 1;
 				break;
 			case 's':
 				str = va_arg(ap, char *);
@@ -37,19 +34,15 @@ void print_all(const char * const format, ...)
 					str = "(nil)";
 
 				printf("%s", str);
-				printed = 1;
 				break;
+			default:
+				printed = 0;
 		};
 
 		if (format[index + 1] && printed == 1)
-		{
 			printf(", ");
-			printed = 0;
-		}
-
 		index++;
 	}
-
 	printf("\n");
 	va_end(ap);
 }
