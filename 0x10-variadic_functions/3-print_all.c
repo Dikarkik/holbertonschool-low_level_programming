@@ -19,27 +19,29 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%c", va_arg(ap, int));
-			break;
+				break;
 			case 'i':
 				printf("%i", va_arg(ap, int));
-			break;
+				break;
 			case 'f':
 				printf("%f", (float) va_arg(ap, double));
-			break;
+				break;
 			case 's':
 				str = va_arg(ap, char *);
-				if (!str || str[0] == '\0')
-				{
+
+				if (str[0] == '\0')
 					str = "(nil)";
-				}
+
 				printf("%s", str);
-			break;
+				break;
 		};
 
 		if (index > 0 && format[index + 1])
 			printf(", ");
+
 		index++;
 	}
+
 	printf("\n");
 	va_end(ap);
 }
