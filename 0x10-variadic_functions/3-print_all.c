@@ -12,6 +12,9 @@ void print_all(const char * const format, ...)
 	char *str;
 	int printed = 0;
 
+	if (format == NULL)
+		return;
+
 	va_start(ap, format);
 	while (format && format[index])
 	{
@@ -30,7 +33,7 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(ap, char *);
 
-				if (str[0] == '\0')
+				if (str == NULL || str[0] == '\0')
 					str = "(nil)";
 
 				printf("%s", str);
