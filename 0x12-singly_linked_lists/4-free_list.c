@@ -9,6 +9,9 @@ void free_list(list_t *head)
 {
 	list_t *reference;
 
+	if (!head)
+		return;
+
 	while (head->next != NULL)
 	{
 		if (head->str != NULL)
