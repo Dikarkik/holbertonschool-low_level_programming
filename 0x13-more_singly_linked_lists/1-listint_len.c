@@ -12,11 +12,9 @@ size_t listint_len(const listint_t *h)
 
 	if (h == NULL)
 		return (0);
-	else
-	{
-		len_list = 1;
-		reference = h->next;
-	}
+
+	len_list = 1;
+	reference = h->next;
 
 	while (reference)
 	{
