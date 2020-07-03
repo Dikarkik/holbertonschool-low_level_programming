@@ -7,7 +7,7 @@ RM=rm -f
 all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
 
-.PHONY: re
+.PHONY: clean
 clean:
 	$(RM) *~ holberton
 
