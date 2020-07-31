@@ -8,7 +8,7 @@ Resources
 
 -   [Everything you need to know to start with C](https://intranet.hbtn.io/rltoken/JgP0ALD8CNZM19FLZQetMQ "Everything you need to know to start with C") (*You do not have to learn everything in there yet, but make sure you read it entirely first*)
 -   [Dennis Ritchie](https://intranet.hbtn.io/rltoken/vY9KI1Ai38BUuydEfadtaA "Dennis Ritchie")
--   ["C" Programming Language: Brian Kernighan](https://intranet.hbtn.io/rltoken/f5nVwIVoNRrnddbX-5h5rw 'C' Programming Language: Brian Kernighan")
+-   ["C" Programming Language: Brian Kernighan](https://intranet.hbtn.io/rltoken/f5nVwIVoNRrnddbX-5h5rw)
 -   [Why C Programming Is Awesome](https://intranet.hbtn.io/rltoken/J7yAaPGVuPoJI4iP1DuIPw "Why C Programming Is Awesome")
 -   [Learning to program in C part 1](https://intranet.hbtn.io/rltoken/AicyjqLinWdA9qxKsXBKjg "Learning to program in C part 1")
 -   [Learning to program in C part 2](https://intranet.hbtn.io/rltoken/1qtDStnOrOjrVseFa3jngA "Learning to program in C part 2")
