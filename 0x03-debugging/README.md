@@ -482,8 +482,8 @@ carrie@ubuntu:/debugging$ ./a.out
 
 ```
 
-	- `j` never increments so it will always be less than `10`
-	- `j` never increments so it is always going to print `0`
+-- `j` never increments so it will always be less than `10`
+-- `j` never increments so it is always going to print `0`
 
 
 - The following code gives this output. What is the error?
@@ -530,7 +530,7 @@ carrie@ubuntu:/debugging$
 
 ```
 
-	- We want to assign `j` a new value, not compare it, so it should be `j = j - 1` instead of `j == j - 1`
+-- We want to assign `j` a new value, not compare it, so it should be `j = j - 1` instead of `j == j - 1`
 
 - This code doesn't work as intended.
 
@@ -605,5 +605,5 @@ int main(void)
 }
 
 
-	- A `printf` statement shows when the `for` loop is finished
-	- `printf` statements shows that `break` will cause "For loop exited" to print, indicating that the even number is never printed
+-- A `printf` statement shows when the `for` loop is finished
+-- `printf` statements shows that `break` will cause "For loop exited" to print, indicating that the even number is never printed
