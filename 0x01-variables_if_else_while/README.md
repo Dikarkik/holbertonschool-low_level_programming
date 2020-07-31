@@ -42,7 +42,8 @@ Learning Objectives
 -   What is the `ASCII` character set
 -   What are the purpose of the `gcc` flags `-m32` and `-m64`
 
--------------------
+Tasks
+-----
 
 ### 0. Positive anything is better than negative nothing
 File: `0-positive_or_negative.c`
