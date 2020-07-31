@@ -43,15 +43,17 @@ Learning Objectives
 -   How to find the right header to include in your source code when using a standard library function
 -   How does the `main` function influence the return value of the program
 
-### 0. Preprocessor
+-------------------
 
+### 0. Preprocessor `0-preprocessor`
 
+File: 0-preprocessor
 Write a script that runs a C file through the preprocessor and save the result into another file.
 
 -   The C file name will be saved in the variable `$CFILE`
 -   The output should be saved in the file `c`
 
-### 1. Compiler
+### 1. Compiler `1-compiler`
 
 
 Write a script that compiles a C file but does not link.
@@ -60,7 +62,7 @@ Write a script that compiles a C file but does not link.
 -   The output file should be named the same as the C file, but with the extension `.o` instead of `.c`.
     -   Example: if the C file is `main.c`, the output file should be `main.o`
 
-### 2. Assembler
+### 2. Assembler `2-assembler`
 
 Write a script that generates the assembly code of a C code and save it in an output file.
 
@@ -68,13 +70,13 @@ The C file name will be saved in the variable $CFILE
 The output file should be named the same as the C file, but with the extension .s instead of .c.
 Example: if the C file is main.c, the output file should be main.s
 
-### 3. Name
+### 3. Name `3-name`
 
 Write a script that compiles a C file and creates an executable named `cisfun`.
 
 -   The C file name will be saved in the variable `$CFILE`
 
-### 4. Hello, puts
+### 4. Hello, puts `4-puts.c`
 
 Write a C program that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
 
@@ -82,7 +84,7 @@ Write a C program that prints exactly `"Programming is like building a multilin
 -   You are not allowed to use `printf`
 -   Your program should end with the value `0`
 
-### 5. Hello, printf
+### 5. Hello, printf `5-printf.c`
 
 Write a C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line.
 
@@ -91,7 +93,7 @@ Write a C program that prints exactly `with proper grammar, but the outcome is 
 -   Your program should return `0`
 -   Your program should compile without warning when using the `-Wall` `gcc` option
 
-### 6. Size is not grandeur, and territory does not make a nation
+### 6. Size is not grandeur, and territory does not make a nation `6-size.c`
 
 Write a C program that prints the size of various types on the computer it is compiled and run on.
 
@@ -103,7 +105,7 @@ Write a C program that prints the size of various types on the computer it is co
 ### 7. What happens when you type gcc main.c
 Blog
 
-### 8. Intel #advanced
+### 8. Intel `100-intel`
 
 Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
 
@@ -111,7 +113,7 @@ Write a script that generates the assembly code (Intel syntax) of a C code and s
 -   The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
     -   Example: if the C file is `main.c`, the output file should be `main.s`
 
-### 9. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity #advanced
+### 9. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity `101-quote.c`
 
 Write a C program that prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error.
 
@@ -124,28 +126,28 @@ Questions
 --------------
 
 - In which category belongs the C programming language?
-    Compiled language
+	Compiled language
 
 - What is the common extension for a C source file?
-    .c
+	.c
 
 - What is the common extension for a C header file?
-    .h
+	.h
 
 - Which command can be used to compile a C source file?
-    gcc
+	gcc
 
 - Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
 
-    ```
+	```
     /* Comment */
-    ```
+	```
 
-    ```
+	```
     /*
      * Comment
      */
-    ```
+	```
 
-- What are the different steps to form an executable file from C source code
-    Preprocessing, compilation, assembly, and linking
+- What are the different steps to form an executable file from C source code?
+	Preprocessing, compilation, assembly, and linking
