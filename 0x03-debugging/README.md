@@ -11,8 +11,6 @@ Resources
 
 Debugging is the process of finding and fixing errors in software that prevents it from running correctly. As you become a more advanced programmer and an industry engineer, you will learn how to use debugging tools such as `gdb` or built-in tools that IDEs have. However, it's important to understand the concepts and processes of debugging manually.
 
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/5/af682f2cbb6d73fd4e42.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200731T224522Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=274995ac27c9f4312c9941579e2b9194f92828a965db5c5dadd00899114a1c3b)
-
 Learning Objectives
 -------------------
 
@@ -482,8 +480,8 @@ carrie@ubuntu:/debugging$ ./a.out
 
 ```
 
--- `j` never increments so it will always be less than `10`
--- `j` never increments so it is always going to print `0`
+    - `j` never increments so it will always be less than `10`
+    - `j` never increments so it is always going to print `0`
 
 
 - The following code gives this output. What is the error?
@@ -530,7 +528,7 @@ carrie@ubuntu:/debugging$
 
 ```
 
--- We want to assign `j` a new value, not compare it, so it should be `j = j - 1` instead of `j == j - 1`
+    - We want to assign `j` a new value, not compare it, so it should be `j = j - 1` instead of `j == j - 1`
 
 - This code doesn't work as intended.
 
@@ -605,5 +603,6 @@ int main(void)
 }
 ```
 
--- A `printf` statement shows when the `for` loop is finished
--- `printf` statements shows that `break` will cause "For loop exited" to print, indicating that the even number is never printed
+    - A `printf` statement shows when the `for` loop is finished
+
+    - `printf` statements shows that `break` will cause "For loop exited" to print, indicating that the even number is never printed
