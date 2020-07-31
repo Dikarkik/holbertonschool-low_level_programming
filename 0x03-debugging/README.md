@@ -388,7 +388,7 @@ Fix the `print_remaining_days()` function so that the output works correctly f
 -   You can assume that all test cases have valid month/day combinations (i.e. there will never be a June 31st or November 31st, etc.), but not all month/day/year combinations are valid (i.e. February 29, 1991 or February 29, 2427).
 
 Questions
---------------
+---------
 
 Look at the following code.
 
@@ -414,7 +414,6 @@ int main(void)
         return (0);
 }
 carrie@ubuntu:/debugging$
-
 ```
 
 ```
@@ -430,7 +429,6 @@ main.c:9:8: error: variable 'hello' set but not used [-Werror=unused-but-set-var
         ^
 cc1: all warnings being treated as errors
 carrie@ubuntu:/debugging$
-
 ```
 
 - In the `main.c` file, on what line is the first error that the compiler returns?
@@ -469,7 +467,6 @@ int main(void)
         return (0);
 }
 carrie@ubuntu:/debugging$
-
 ```
 
 ```
@@ -477,11 +474,10 @@ carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic main.c
 carrie@ubuntu:/debugging$ ./a.out
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 <...>
 ^Ccarrie@ubuntu:/debugging$
-
 ```
 
-    - `j` never increments so it will always be less than `10`
-    - `j` never increments so it is always going to print `0`
+    `j` never increments so it will always be less than `10`
+    `j` never increments so it is always going to print `0`
 
 
 - The following code gives this output. What is the error?
@@ -513,7 +509,6 @@ int main(void)
         return (0);
 }
 carrie@ubuntu:/debugging$
-
 ```
 
 ```
@@ -525,10 +520,9 @@ main.c:20:3: error: statement with no effect [-Werror=unused-value]
    ^
 cc1: all warnings being treated as errors
 carrie@ubuntu:/debugging$
-
 ```
 
-    - We want to assign `j` a new value, not compare it, so it should be `j = j - 1` instead of `j == j - 1`
+    We want to assign `j` a new value, not compare it, so it should be `j = j - 1` instead of `j == j - 1`
 
 - This code doesn't work as intended.
 
@@ -560,7 +554,6 @@ int main(void)
 
         return(0);
 }
-
 ```
 
 Let's add `printf` statements to the code. What information do the `printf` statements tell us about how our code is executed?
@@ -603,6 +596,6 @@ int main(void)
 }
 ```
 
-    - A `printf` statement shows when the `for` loop is finished
+    A `printf` statement shows when the `for` loop is finished
 
-    - `printf` statements shows that `break` will cause "For loop exited" to print, indicating that the even number is never printed
+    `printf` statements shows that `break` will cause "For loop exited" to print, indicating that the even number is never printed

@@ -293,8 +293,8 @@ Write a function that prints an integer.
 -   You are not allowed to use arrays or pointers
 -   You are not allowed to hard-code special values
 
-Quiz questions
---------------
+Questions
+---------
 
 - What is the output of the following piece of code?
 
