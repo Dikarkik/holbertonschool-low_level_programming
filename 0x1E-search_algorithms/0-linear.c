@@ -12,7 +12,7 @@
  * If value is not present in array or if array is NULL, must return -1.
  *
  * gcc -Wall -Wextra -Werror -pedantic 0-main.c 0-linear.c -o 0-linear
-*/
+ */
 int linear_search(int *array, size_t size, int value)
 {
 	size_t index = 0;
