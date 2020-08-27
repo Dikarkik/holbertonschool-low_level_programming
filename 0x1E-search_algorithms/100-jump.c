@@ -23,7 +23,7 @@ int jump_search(int *array, size_t size, int value)
 	size_t jump_size;
 	size_t jumps = 0;
 	size_t index = 0;
-	size_t final = size;
+	size_t final;
 
 	if (array == NULL || size < 1)
 		return (-1);
@@ -41,11 +41,13 @@ int jump_search(int *array, size_t size, int value)
 			((jumps - 1) * jump_size), (jumps * jump_size));
 
 	index = (jumps - 1) * jump_size;
+	if (jumps == 0)
+		index = 0;
 	final = jumps * jump_size;
 	if (final > size)
-		final = size;
+		final = size - 1;
 
-	for (; index < final; index++)
+	for (; index <= final; index++)
 	{
 		printf("Value checked array[%lu] = [%d]\n", index, array[index]);
 		if (array[index] == value)
