@@ -17,13 +17,13 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t start, end, i_middle, index;
+	int start, end, i_middle, index;
 
 	if (array == NULL || size < 1)
 		return (-1);
 
 	start = 0;
-	end = size - 1;
+	end = (int)size - 1;
 
 	while (start <= end)
 	{
@@ -44,7 +44,7 @@ int binary_search(int *array, size_t size, int value)
 		else if (array[i_middle] > value)
 			end = i_middle - 1;
 		else
-			return ((int) i_middle);
+			return (i_middle);
 	}
 	return (-1);
 }
