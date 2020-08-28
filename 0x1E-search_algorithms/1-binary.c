@@ -39,12 +39,12 @@ int binary_search(int *array, size_t size, int value)
 
 		i_middle = (start + end) / 2;
 
-		if (array[i_middle] == value)
-			return (i_middle);
-		else if (array[i_middle] < value)
+		if (array[i_middle] < value)
 			start = i_middle + 1;
 		else if (array[i_middle] > value)
 			end = i_middle - 1;
+		else
+			return ((int) i_middle);
 	}
 	return (-1);
 }
